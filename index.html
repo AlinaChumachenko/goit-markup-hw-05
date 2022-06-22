@@ -22,7 +22,7 @@
         <nav class="navigation">
             <a href="./index.html" class="logo-blue link">Web<span class="logo-black link">Studio</span></a>
             <ul class="site-navigation-list">
-                <li class="header-item-site"><a class="site-navigation link" href="./index.html"><span class="studio-blue">Студия</span></a></li>
+                <li class="header-item-site"><a class="site-navigation current link" href="./index.html"><span class="studio-blue">Студия</span></a></li>
                 <li class="header-item-site"><a class="site-navigation link" href="./portfolio.html">Портфолио</a></li>
                 <li class="header-item-site"><a class="site-navigation link" href="">Контакты</a></li>
             </ul>
@@ -51,7 +51,7 @@
         <section class="hero">
             <div class="container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="hero-btn">Заказать услугу</button>
+            <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <section class="block-our-featires">
@@ -81,11 +81,17 @@
             <div class="container">
             <h2 class="block-title">Чем мы занимаемся</h2>
             <ul class="block-list">
-                <li class="blok-item"><img src="./images/services-img-1.jpg" alt="Ноутбук" width="370">
+                <li class="blok-item">
+                    <img src="./images/services-img-1.jpg" alt="Ноутбук" width="370">
+                    <p class="images-description">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                 </li>
-                <li class="blok-item"><img src="./images/services-img-2.jpg" alt="Андроид" width="370">
+                <li class="blok-item">
+                    <img src="./images/services-img-2.jpg" alt="Андроид" width="370">
+                    <p class="images-description">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                 </li>
-                <li class="blok-item"><img src="./images/services-img-3.jpg" alt="Планшет" width="370">
+                <li class="blok-item">
+                    <img src="./images/services-img-3.jpg" alt="Планшет" width="370">
+                    <p class="images-description">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                 </li>
             </ul>
             </div>
@@ -339,7 +345,16 @@
             </div>
         </div>
     </footer>
-
+    <div class="bacdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="" width="18" height="18">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

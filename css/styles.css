@@ -151,7 +151,7 @@ ul {
 .current::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     display: block;
     width: 100%;
     height: 4px;  
@@ -374,12 +374,10 @@ ul {
     background-color: rgba(47, 48, 58, 0.8);
     bottom: 0;
     text-transform: uppercase;
-    font-style: Bold;
-    line height: 1.14;
-    line-height: 100%;
-    align: Center;
-    vertical-align: Top;
-    letter-spacing: 3%;
+    
+    font-weight: 700;    
+    line-height: 1.17;
+    
     color: var(--hero-text-color);
 }
 
@@ -576,20 +574,19 @@ ul {
 }
 
 .portfolio-top-text {
+    display: flex;
+    align-items: center;
+
     position: absolute;
     top: 0;
     transform: translateY(100%);
     transition: transform 250ms var(--time-variable);
     
-    font-style: Regular;
     font-size: 18px;
     line-height: 1.56;
-    line-height: 133%;
-    align: Left;
-    vertical align: Top;
-    letter spacing: 3%; 
-
-    padding: 63px 24px;
+           
+    padding-right: 24px;
+    padding-left: 24px;
     height: 100%;
    
     color: var(--hero-text-color);
@@ -719,6 +716,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    background-color: var(--accent-color);
 }
 
 .is-hidden {

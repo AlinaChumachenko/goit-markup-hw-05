@@ -717,11 +717,14 @@ footer {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: background-color 250ms var(--time-variable),
+    fill 250ms var(--time-variable);
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
     background-color: var(--accent-color);
+    fill: var(--hero-text-color);
 }
 
 .is-hidden {
